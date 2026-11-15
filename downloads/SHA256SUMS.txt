@@ -1,0 +1,4 @@
+91a7d4d5cf2f1cede5a6788160a787668d556a19ecbf235285d464bb990b66b1  downloads/tv-assistant-windows-v23.zip
+bd1904986c89b6df92519356ac342c3c43442905bdab040b43f0d252020f3630  downloads/sunset-tv-windows-v1.1.zip
+c69f0a87a1be1d8f54058df26a2813db5101a67f6bf9de5caac64972913b961a  assistant/windows/tv-assistant.apk
+e6fb9c2435d9d29e9dc1b179031f464682d1a999752fab5b62e6a128fe470dd2  sunset-tv/windows/SunsetTV_1_1.apk

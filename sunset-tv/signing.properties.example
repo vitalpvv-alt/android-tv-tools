@@ -1,0 +1,3 @@
+storePassword=CHANGE_ME
+keyPassword=CHANGE_ME
+# Copy to signing/signing.properties; keep signing/sunset-tv.jks private.

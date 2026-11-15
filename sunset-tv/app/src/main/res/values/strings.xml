@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Сумерки ТВ</string>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">#10151F</item>
+        <item name="android:colorAccent">#FFBC71</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>

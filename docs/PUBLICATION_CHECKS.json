@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-15",
+  "assistant": {
+    "public_source_build": "PASS",
+    "jvm_checks": 87,
+    "weather_checks": 48,
+    "search_checks": 7,
+    "android9_robolectric": 36,
+    "windows_node_checks": 61,
+    "failed": 0,
+    "apk_sha256": "c69f0a87a1be1d8f54058df26a2813db5101a67f6bf9de5caac64972913b961a"
+  },
+  "sunset_tv": {
+    "jvm_tests": 32,
+    "windows_node_checks": 11,
+    "failed": 0,
+    "apk_sha256": "e6fb9c2435d9d29e9dc1b179031f464682d1a999752fab5b62e6a128fe470dd2"
+  },
+  "scope": "Public source rebuild and local tests; this publication step did not install apps or run commands on a TV. Shipped APKs retain the tested Android code and signatures. Windows target selection and build portability were changed.",
+  "privacy": {
+    "private_signing_material_included": false,
+    "home_adb_address_included": false,
+    "actual_api_credentials_included": false,
+    "personal_logs_included": false,
+    "browser_screenshots_included": false,
+    "ui_demo_images": "Synthetic Android Canvas renders"
+  }
+}

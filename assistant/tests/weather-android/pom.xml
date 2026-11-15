@@ -1,0 +1,12 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <modelVersion>4.0.0</modelVersion><groupId>dev.mert</groupId><artifactId>weather-android-checks</artifactId><version>1</version>
+ <properties><maven.compiler.release>8</maven.compiler.release><android.sdk.root>${env.ANDROID_SDK_ROOT}</android.sdk.root><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding></properties>
+ <repositories><repository><id>google</id><url>https://dl.google.com/dl/android/maven2/</url></repository></repositories>
+ <dependencies>
+  <dependency><groupId>dev.mert</groupId><artifactId>assistant-local</artifactId><version>20</version><scope>system</scope><systemPath>${project.basedir}/../../build/classes.jar</systemPath></dependency>
+  <dependency><groupId>android</groupId><artifactId>android-sdk-local</artifactId><version>36</version><scope>system</scope><systemPath>${android.sdk.root}/platforms/android-36/android.jar</systemPath></dependency>
+  <dependency><groupId>junit</groupId><artifactId>junit</artifactId><version>4.13.2</version><scope>test</scope></dependency>
+  <dependency><groupId>org.robolectric</groupId><artifactId>robolectric</artifactId><version>4.16</version><scope>test</scope></dependency>
+ </dependencies>
+ <build><plugins><plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.5.2</version><configuration><additionalClasspathElements><additionalClasspathElement>${project.basedir}/../../build/weather-aar/monitor.jar</additionalClasspathElement><additionalClasspathElement>${project.basedir}/../../build/weather-aar/espresso.jar</additionalClasspathElement></additionalClasspathElements><systemPropertyVariables><robolectric.offline>true</robolectric.offline><robolectric.dependency.dir>${project.basedir}/../../build/weather-sdk</robolectric.dependency.dir></systemPropertyVariables></configuration></plugin></plugins></build>
+</project>

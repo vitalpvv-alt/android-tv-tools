@@ -1,0 +1,9 @@
+{
+  "package": "ru.vital.tv.sunset",
+  "version": "1.1",
+  "versionCode": 2,
+  "model": "MiTV-MSSP1",
+  "minSdk": 28,
+  "sha256": "e6fb9c2435d9d29e9dc1b179031f464682d1a999752fab5b62e6a128fe470dd2",
+  "bytes": 58280
+}

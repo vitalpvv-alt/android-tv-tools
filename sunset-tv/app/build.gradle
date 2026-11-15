@@ -1,0 +1,39 @@
+plugins { id 'com.android.application' }
+
+def signingValues = new Properties()
+def signingFile = rootProject.file('signing/signing.properties')
+if (signingFile.exists()) signingFile.withInputStream { signingValues.load(it) }
+
+android {
+    namespace 'ru.vital.tv.sunset'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'ru.vital.tv.sunset'
+        minSdk 28
+        targetSdk 34
+        versionCode 2
+        versionName '1.1'
+    }
+    signingConfigs {
+        releaseKey {
+            if (signingFile.exists()) {
+                storeFile rootProject.file('signing/sunset-tv.jks')
+                storePassword signingValues.getProperty('storePassword')
+                keyAlias 'sunset-tv'
+                keyPassword signingValues.getProperty('keyPassword')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (signingFile.exists()) signingConfig signingConfigs.releaseKey
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    lint { abortOnError true; checkReleaseBuilds true }
+}
+dependencies { testImplementation 'junit:junit:4.13.2' }
